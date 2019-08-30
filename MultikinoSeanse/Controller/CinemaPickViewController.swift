@@ -21,7 +21,7 @@ class CinemaPickViewController: UIViewController {
     
     //IBActions:
     @IBAction func okButtonPressed(_ sender: UIButton) {
-        //stuff
+        performSegue(withIdentifier: "InitialSeguey", sender: self)
     }
     
     //functions:
@@ -30,15 +30,17 @@ class CinemaPickViewController: UIViewController {
         super.viewDidLoad()
         GetCinemasList.init(completionHandler: { (cinemasList) in
             self.cinemasArray.append(contentsOf: cinemasList)
-                
-            print(self.cinemasArray)
             self.enablePickerView()
         }).getList()
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //stuff
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "InitialSeguey"{
+//            let vc = segue.destination as! CustomTabBarController
+//            vc.currentCinemaName=cinema
+//            vc.currentCinemaId=cinemaID
+//        }
+//    }
 }
 
 extension CinemaPickViewController:UIPickerViewDelegate,UIPickerViewDataSource{
@@ -48,6 +50,8 @@ extension CinemaPickViewController:UIPickerViewDelegate,UIPickerViewDataSource{
         DispatchQueue.main.async {
             self.cinemasPickerView.delegate = self
             self.cinemasPickerView.dataSource = self
+            self.cinema = self.cinemasArray[0].name
+            self.cinemaID = self.cinemasArray[0].id
         }
         
     }
@@ -64,6 +68,11 @@ extension CinemaPickViewController:UIPickerViewDelegate,UIPickerViewDataSource{
     
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
         return NSAttributedString(string: cinemasArray[row].name, attributes: [NSAttributedString.Key.foregroundColor:UIColor.white])
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        cinema = cinemasArray[row].name
+        cinemaID = cinemasArray[row].id
     }
     
     

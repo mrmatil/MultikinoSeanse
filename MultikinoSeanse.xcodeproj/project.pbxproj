@@ -3,27 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EFF8D299B7FF1FD73DAEF8B /* Pods_MultikinoSeanse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2D9C9159EC7018E99E9C76 /* Pods_MultikinoSeanse.framework */; };
 		23083B11231831AC0050536C /* getJsonFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23083B10231831AC0050536C /* getJsonFromURL.swift */; };
 		23083B1423184A4B0050536C /* CinemaListArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23083B1323184A4B0050536C /* CinemaListArray.swift */; };
 		23083B1623184AF40050536C /* GetCinemasList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23083B1523184AF40050536C /* GetCinemasList.swift */; };
 		23083B1823185D040050536C /* allURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23083B1723185D040050536C /* allURLs.swift */; };
+		23B113292319BF4400A56DEC /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B113282319BF4400A56DEC /* MoviesViewController.swift */; };
 		23C4B9A823171421006B96AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4B9A723171421006B96AB /* AppDelegate.swift */; };
 		23C4B9AA23171421006B96AB /* CinemaPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4B9A923171421006B96AB /* CinemaPickViewController.swift */; };
 		23C4B9AD23171421006B96AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C4B9AB23171421006B96AB /* Main.storyboard */; };
 		23C4B9AF23171422006B96AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C4B9AE23171422006B96AB /* Assets.xcassets */; };
 		23C4B9B223171422006B96AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C4B9B023171422006B96AB /* LaunchScreen.storyboard */; };
-		45C543D6343F792B4D952594 /* Pods_MultikinoSeanse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AABD0596F3ED834EA80174 /* Pods_MultikinoSeanse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A2D9C9159EC7018E99E9C76 /* Pods_MultikinoSeanse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultikinoSeanse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23083B10231831AC0050536C /* getJsonFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getJsonFromURL.swift; sourceTree = "<group>"; };
 		23083B1323184A4B0050536C /* CinemaListArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaListArray.swift; sourceTree = "<group>"; };
 		23083B1523184AF40050536C /* GetCinemasList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCinemasList.swift; sourceTree = "<group>"; };
 		23083B1723185D040050536C /* allURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allURLs.swift; sourceTree = "<group>"; };
+		23B113282319BF4400A56DEC /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		23C4B9A423171420006B96AB /* MultikinoSeanse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultikinoSeanse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C4B9A723171421006B96AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23C4B9A923171421006B96AB /* CinemaPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaPickViewController.swift; sourceTree = "<group>"; };
@@ -31,9 +34,8 @@
 		23C4B9AE23171422006B96AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23C4B9B123171422006B96AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23C4B9B323171422006B96AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24AABD0596F3ED834EA80174 /* Pods_MultikinoSeanse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultikinoSeanse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		251A0926D513F3C7F8D4D689 /* Pods-MultikinoSeanse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultikinoSeanse.debug.xcconfig"; path = "Target Support Files/Pods-MultikinoSeanse/Pods-MultikinoSeanse.debug.xcconfig"; sourceTree = "<group>"; };
-		F2952AC653E7745AE06017A5 /* Pods-MultikinoSeanse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultikinoSeanse.release.xcconfig"; path = "Target Support Files/Pods-MultikinoSeanse/Pods-MultikinoSeanse.release.xcconfig"; sourceTree = "<group>"; };
+		24ED3AC4F6F24B301C2232B5 /* Pods-MultikinoSeanse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultikinoSeanse.debug.xcconfig"; path = "Target Support Files/Pods-MultikinoSeanse/Pods-MultikinoSeanse.debug.xcconfig"; sourceTree = "<group>"; };
+		8035EB675F1F2BE76DAB85F8 /* Pods-MultikinoSeanse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultikinoSeanse.release.xcconfig"; path = "Target Support Files/Pods-MultikinoSeanse/Pods-MultikinoSeanse.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45C543D6343F792B4D952594 /* Pods_MultikinoSeanse.framework in Frameworks */,
+				1EFF8D299B7FF1FD73DAEF8B /* Pods_MultikinoSeanse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +74,7 @@
 				23C4B9A623171420006B96AB /* MultikinoSeanse */,
 				23C4B9A523171420006B96AB /* Products */,
 				FEC5FB7F2235683DD4507674 /* Pods */,
-				599C01F229C7C6D0EEC37858 /* Frameworks */,
+				A917AFD2318A78850B23E14A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +103,7 @@
 			children = (
 				23C4B9A723171421006B96AB /* AppDelegate.swift */,
 				23C4B9A923171421006B96AB /* CinemaPickViewController.swift */,
+				23B113282319BF4400A56DEC /* MoviesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -123,10 +126,10 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		599C01F229C7C6D0EEC37858 /* Frameworks */ = {
+		A917AFD2318A78850B23E14A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				24AABD0596F3ED834EA80174 /* Pods_MultikinoSeanse.framework */,
+				1A2D9C9159EC7018E99E9C76 /* Pods_MultikinoSeanse.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,10 +137,9 @@
 		FEC5FB7F2235683DD4507674 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				251A0926D513F3C7F8D4D689 /* Pods-MultikinoSeanse.debug.xcconfig */,
-				F2952AC653E7745AE06017A5 /* Pods-MultikinoSeanse.release.xcconfig */,
+				24ED3AC4F6F24B301C2232B5 /* Pods-MultikinoSeanse.debug.xcconfig */,
+				8035EB675F1F2BE76DAB85F8 /* Pods-MultikinoSeanse.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -148,11 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23C4B9B623171422006B96AB /* Build configuration list for PBXNativeTarget "MultikinoSeanse" */;
 			buildPhases = (
-				755EA8A1DFD9A4EF832BD653 /* [CP] Check Pods Manifest.lock */,
+				E8CE32F0EC5754722955E31B /* [CP] Check Pods Manifest.lock */,
 				23C4B9A023171420006B96AB /* Sources */,
 				23C4B9A123171420006B96AB /* Frameworks */,
 				23C4B9A223171420006B96AB /* Resources */,
-				A43462FE8AABC28879FB37ED /* [CP] Embed Pods Frameworks */,
+				93C989BCEA5140B6A7F4B90C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,7 +212,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		755EA8A1DFD9A4EF832BD653 /* [CP] Check Pods Manifest.lock */ = {
+		93C989BCEA5140B6A7F4B90C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultikinoSeanse/Pods-MultikinoSeanse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultikinoSeanse/Pods-MultikinoSeanse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultikinoSeanse/Pods-MultikinoSeanse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8CE32F0EC5754722955E31B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,28 +251,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A43462FE8AABC28879FB37ED /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MultikinoSeanse/Pods-MultikinoSeanse-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultikinoSeanse/Pods-MultikinoSeanse-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -266,6 +263,7 @@
 				23C4B9AA23171421006B96AB /* CinemaPickViewController.swift in Sources */,
 				23083B11231831AC0050536C /* getJsonFromURL.swift in Sources */,
 				23C4B9A823171421006B96AB /* AppDelegate.swift in Sources */,
+				23B113292319BF4400A56DEC /* MoviesViewController.swift in Sources */,
 				23083B1823185D040050536C /* allURLs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,7 +408,7 @@
 		};
 		23C4B9B723171422006B96AB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 251A0926D513F3C7F8D4D689 /* Pods-MultikinoSeanse.debug.xcconfig */;
+			baseConfigurationReference = 24ED3AC4F6F24B301C2232B5 /* Pods-MultikinoSeanse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -429,7 +427,7 @@
 		};
 		23C4B9B823171422006B96AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2952AC653E7745AE06017A5 /* Pods-MultikinoSeanse.release.xcconfig */;
+			baseConfigurationReference = 8035EB675F1F2BE76DAB85F8 /* Pods-MultikinoSeanse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
