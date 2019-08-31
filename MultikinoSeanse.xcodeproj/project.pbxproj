@@ -12,7 +12,13 @@
 		23083B1423184A4B0050536C /* CinemaListArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23083B1323184A4B0050536C /* CinemaListArray.swift */; };
 		23083B1623184AF40050536C /* GetCinemasList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23083B1523184AF40050536C /* GetCinemasList.swift */; };
 		23083B1823185D040050536C /* allURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23083B1723185D040050536C /* allURLs.swift */; };
+		238B30DE231AE9740095408A /* DatesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30DD231AE9740095408A /* DatesArray.swift */; };
+		238B30E0231AE9BF0095408A /* GetDatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30DF231AE9BF0095408A /* GetDatesList.swift */; };
+		238B30E3231AFEE30095408A /* MoviesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30E2231AFEE30095408A /* MoviesArray.swift */; };
+		238B30E5231B11DF0095408A /* GetMoviesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30E4231B11DF0095408A /* GetMoviesList.swift */; };
+		238B30E7231B16070095408A /* changeDateLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30E6231B16070095408A /* changeDateLayout.swift */; };
 		23B113292319BF4400A56DEC /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B113282319BF4400A56DEC /* MoviesViewController.swift */; };
+		23B113322319D24100A56DEC /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B113312319D24100A56DEC /* LeftMenuViewController.swift */; };
 		23C4B9A823171421006B96AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4B9A723171421006B96AB /* AppDelegate.swift */; };
 		23C4B9AA23171421006B96AB /* CinemaPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4B9A923171421006B96AB /* CinemaPickViewController.swift */; };
 		23C4B9AD23171421006B96AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C4B9AB23171421006B96AB /* Main.storyboard */; };
@@ -26,7 +32,13 @@
 		23083B1323184A4B0050536C /* CinemaListArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaListArray.swift; sourceTree = "<group>"; };
 		23083B1523184AF40050536C /* GetCinemasList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCinemasList.swift; sourceTree = "<group>"; };
 		23083B1723185D040050536C /* allURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allURLs.swift; sourceTree = "<group>"; };
+		238B30DD231AE9740095408A /* DatesArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesArray.swift; sourceTree = "<group>"; };
+		238B30DF231AE9BF0095408A /* GetDatesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDatesList.swift; sourceTree = "<group>"; };
+		238B30E2231AFEE30095408A /* MoviesArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesArray.swift; sourceTree = "<group>"; };
+		238B30E4231B11DF0095408A /* GetMoviesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMoviesList.swift; sourceTree = "<group>"; };
+		238B30E6231B16070095408A /* changeDateLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changeDateLayout.swift; sourceTree = "<group>"; };
 		23B113282319BF4400A56DEC /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		23B113312319D24100A56DEC /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		23C4B9A423171420006B96AB /* MultikinoSeanse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultikinoSeanse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C4B9A723171421006B96AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23C4B9A923171421006B96AB /* CinemaPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaPickViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +67,7 @@
 			children = (
 				23083B10231831AC0050536C /* getJsonFromURL.swift */,
 				23083B1723185D040050536C /* allURLs.swift */,
+				238B30E6231B16070095408A /* changeDateLayout.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -66,6 +79,32 @@
 				23083B1523184AF40050536C /* GetCinemasList.swift */,
 			);
 			path = CinemasList;
+			sourceTree = "<group>";
+		};
+		238B30DC231AE95F0095408A /* DatesList */ = {
+			isa = PBXGroup;
+			children = (
+				238B30DD231AE9740095408A /* DatesArray.swift */,
+				238B30DF231AE9BF0095408A /* GetDatesList.swift */,
+			);
+			path = DatesList;
+			sourceTree = "<group>";
+		};
+		238B30E1231AFECF0095408A /* MoviesList */ = {
+			isa = PBXGroup;
+			children = (
+				238B30E2231AFEE30095408A /* MoviesArray.swift */,
+				238B30E4231B11DF0095408A /* GetMoviesList.swift */,
+			);
+			path = MoviesList;
+			sourceTree = "<group>";
+		};
+		23B1132C2319CBE600A56DEC /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				23B113312319D24100A56DEC /* LeftMenuViewController.swift */,
+			);
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 		23C4B99B23171420006B96AB = {
@@ -102,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				23C4B9A723171421006B96AB /* AppDelegate.swift */,
+				23B1132C2319CBE600A56DEC /* SideMenu */,
 				23C4B9A923171421006B96AB /* CinemaPickViewController.swift */,
 				23B113282319BF4400A56DEC /* MoviesViewController.swift */,
 			);
@@ -120,6 +160,8 @@
 		23C4B9BB2317144C006B96AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				238B30E1231AFECF0095408A /* MoviesList */,
+				238B30DC231AE95F0095408A /* DatesList */,
 				23083B1223184A280050536C /* CinemasList */,
 				23083B0F231831890050536C /* Utilities */,
 			);
@@ -259,11 +301,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				23083B1623184AF40050536C /* GetCinemasList.swift in Sources */,
+				238B30E5231B11DF0095408A /* GetMoviesList.swift in Sources */,
+				23B113322319D24100A56DEC /* LeftMenuViewController.swift in Sources */,
+				238B30DE231AE9740095408A /* DatesArray.swift in Sources */,
 				23083B1423184A4B0050536C /* CinemaListArray.swift in Sources */,
 				23C4B9AA23171421006B96AB /* CinemaPickViewController.swift in Sources */,
 				23083B11231831AC0050536C /* getJsonFromURL.swift in Sources */,
 				23C4B9A823171421006B96AB /* AppDelegate.swift in Sources */,
+				238B30E7231B16070095408A /* changeDateLayout.swift in Sources */,
 				23B113292319BF4400A56DEC /* MoviesViewController.swift in Sources */,
+				238B30E3231AFEE30095408A /* MoviesArray.swift in Sources */,
+				238B30E0231AE9BF0095408A /* GetDatesList.swift in Sources */,
 				23083B1823185D040050536C /* allURLs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

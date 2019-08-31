@@ -34,13 +34,13 @@ class CinemaPickViewController: UIViewController {
         }).getList()
     }
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "InitialSeguey"{
-//            let vc = segue.destination as! CustomTabBarController
-//            vc.currentCinemaName=cinema
-//            vc.currentCinemaId=cinemaID
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "InitialSeguey"{
+            let vc = segue.destination as! MoviesViewController
+            vc.currentCinemaName=cinema
+            vc.currentCinemaId=cinemaID
+        }
+    }
 }
 
 extension CinemaPickViewController:UIPickerViewDelegate,UIPickerViewDataSource{

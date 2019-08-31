@@ -30,8 +30,8 @@ class GetCinemasList{
         let array = jsonFromString["cinemas"]["whatsOnCinemas"].array!
         
         for temp in array{
-            guard let cinemaName = temp["CinemaName"].string else {return}
-            guard let cinemaID = temp["CinemaId"].string else {return}
+            guard let cinemaName = temp["CinemaName"].string else {continue}
+            guard let cinemaID = temp["CinemaId"].string else {continue}
             
             cinemasArray.append(CinemaListArray(name: cinemaName, id: cinemaID))
         }
