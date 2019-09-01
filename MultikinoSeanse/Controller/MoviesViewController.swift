@@ -28,7 +28,15 @@ class MoviesViewController: UIViewController {
             self.datesArray.append(contentsOf: datesArrayTemp)
             self.currentDate = datesArrayTemp[0].date
             self.enablePickerView()
+            self.getMoviesList()
         }).getList()
+    }
+    
+    private func getMoviesList(){
+        GetMoviesList(date: currentDate!, cinemaId: currentCinemaId!) { (moviesArray) in
+            print(moviesArray)
+            print("KONIEC")
+        }.getList()
     }
     
     
@@ -64,7 +72,6 @@ extension MoviesViewController:UIPickerViewDelegate,UIPickerViewDataSource{
         toolbar.isUserInteractionEnabled = true
         
         pickDateTextField.inputAccessoryView = toolbar
-        
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

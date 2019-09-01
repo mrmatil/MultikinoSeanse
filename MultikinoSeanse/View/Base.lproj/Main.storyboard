@@ -109,7 +109,7 @@
                         <viewLayoutGuide key="safeArea" id="64m-VY-h9r"/>
                     </view>
                     <navigationItem key="navigationItem" title="Seanse" id="gZy-64-2EJ">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="edit" id="F3r-TN-SAD"/>
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="edit" id="F3r-TN-SAD"/>
                     </navigationItem>
                     <connections>
                         <outlet property="pickDateTextField" destination="sCg-3O-0Jc" id="T1G-im-EnU"/>
