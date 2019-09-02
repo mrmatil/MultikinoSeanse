@@ -22,7 +22,9 @@ class GetMoviesList{
     }
     
     func getList(){
-        getJsonFromURL(url: AllUrls.moviesList1+cinemaId+AllUrls.moviesList2+date+AllUrls.moviesList3, completionHandler: parseJson).downloadStandardData()
+        let url = AllUrls.moviesList1+cinemaId+AllUrls.moviesList2+changeDateLayout.changeFromYearFirstToYearLast(date: date)+AllUrls.moviesList3
+//        print(url)
+        getJsonFromURL(url: url, completionHandler: parseJson).downloadStandardData()
     }
     
     private func parseJson(json:String){

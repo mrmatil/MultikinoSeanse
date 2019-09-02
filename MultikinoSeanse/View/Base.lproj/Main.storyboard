@@ -88,23 +88,40 @@
                                             <segue destination="lFW-4F-Htb" kind="presentation" id="WmJ-6v-Xob"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jg-PG-RK6">
+                                        <rect key="frame" x="322" y="62" width="92" height="30"/>
+                                        <state key="normal" title="Reload kurwa"/>
+                                        <connections>
+                                            <action selector="KURWA:" destination="DLz-D7-Uic" eventType="touchUpInside" id="vbT-27-Wdo"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="pXz-dH-jy0" firstAttribute="leading" secondItem="QP6-Ea-Vsz" secondAttribute="leading" constant="5" id="72d-xd-70v"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Jg-PG-RK6" secondAttribute="trailing" id="CaH-mD-baU"/>
                                     <constraint firstAttribute="height" constant="100" id="OeZ-0g-HOc"/>
+                                    <constraint firstAttribute="bottom" secondItem="0Jg-PG-RK6" secondAttribute="bottom" constant="8" id="fqE-bF-N4N"/>
                                     <constraint firstAttribute="bottom" secondItem="pXz-dH-jy0" secondAttribute="bottom" constant="5" id="sUs-s2-zj7"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VHo-ma-r9A">
+                                <rect key="frame" x="5" y="150" width="404" height="702"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sCg-3O-0Jc" firstAttribute="leading" secondItem="64m-VY-h9r" secondAttribute="leading" constant="5" id="Dcf-vv-0Rz"/>
                             <constraint firstItem="QP6-Ea-Vsz" firstAttribute="trailing" secondItem="64m-VY-h9r" secondAttribute="trailing" id="JD8-Io-nWH"/>
+                            <constraint firstItem="64m-VY-h9r" firstAttribute="trailing" secondItem="VHo-ma-r9A" secondAttribute="trailing" constant="5" id="SMi-Iq-m3n"/>
                             <constraint firstItem="sCg-3O-0Jc" firstAttribute="top" secondItem="QP6-Ea-Vsz" secondAttribute="bottom" constant="10" id="Sjq-1v-XKX"/>
+                            <constraint firstItem="64m-VY-h9r" firstAttribute="bottom" secondItem="VHo-ma-r9A" secondAttribute="bottom" constant="10" id="Sld-aM-xiS"/>
                             <constraint firstItem="QP6-Ea-Vsz" firstAttribute="top" secondItem="dNz-qU-l2O" secondAttribute="top" id="Vsw-Qm-kV7"/>
+                            <constraint firstItem="VHo-ma-r9A" firstAttribute="leading" secondItem="64m-VY-h9r" secondAttribute="leading" constant="5" id="YzS-Pf-JQO"/>
                             <constraint firstItem="64m-VY-h9r" firstAttribute="trailing" secondItem="sCg-3O-0Jc" secondAttribute="trailing" constant="5" id="dAU-Jd-m67"/>
                             <constraint firstItem="QP6-Ea-Vsz" firstAttribute="leading" secondItem="dNz-qU-l2O" secondAttribute="leading" id="j5K-s5-wXz"/>
+                            <constraint firstItem="VHo-ma-r9A" firstAttribute="top" secondItem="sCg-3O-0Jc" secondAttribute="bottom" constant="10" id="zsT-qB-xDv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="64m-VY-h9r"/>
                     </view>
@@ -112,6 +129,7 @@
                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="edit" id="F3r-TN-SAD"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="moviesTableView" destination="VHo-ma-r9A" id="poV-Ui-0bV"/>
                         <outlet property="pickDateTextField" destination="sCg-3O-0Jc" id="T1G-im-EnU"/>
                     </connections>
                 </viewController>

@@ -12,6 +12,8 @@
 		23083B1423184A4B0050536C /* CinemaListArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23083B1323184A4B0050536C /* CinemaListArray.swift */; };
 		23083B1623184AF40050536C /* GetCinemasList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23083B1523184AF40050536C /* GetCinemasList.swift */; };
 		23083B1823185D040050536C /* allURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23083B1723185D040050536C /* allURLs.swift */; };
+		234013A5231D228900761F8C /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234013A3231D228900761F8C /* MoviesTableViewCell.swift */; };
+		234013A6231D228900761F8C /* MoviesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234013A4231D228900761F8C /* MoviesTableViewCell.xib */; };
 		238B30DE231AE9740095408A /* DatesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30DD231AE9740095408A /* DatesArray.swift */; };
 		238B30E0231AE9BF0095408A /* GetDatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30DF231AE9BF0095408A /* GetDatesList.swift */; };
 		238B30E3231AFEE30095408A /* MoviesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30E2231AFEE30095408A /* MoviesArray.swift */; };
@@ -32,6 +34,8 @@
 		23083B1323184A4B0050536C /* CinemaListArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaListArray.swift; sourceTree = "<group>"; };
 		23083B1523184AF40050536C /* GetCinemasList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCinemasList.swift; sourceTree = "<group>"; };
 		23083B1723185D040050536C /* allURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allURLs.swift; sourceTree = "<group>"; };
+		234013A3231D228900761F8C /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
+		234013A4231D228900761F8C /* MoviesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesTableViewCell.xib; sourceTree = "<group>"; };
 		238B30DD231AE9740095408A /* DatesArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesArray.swift; sourceTree = "<group>"; };
 		238B30DF231AE9BF0095408A /* GetDatesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDatesList.swift; sourceTree = "<group>"; };
 		238B30E2231AFEE30095408A /* MoviesArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesArray.swift; sourceTree = "<group>"; };
@@ -79,6 +83,15 @@
 				23083B1523184AF40050536C /* GetCinemasList.swift */,
 			);
 			path = CinemasList;
+			sourceTree = "<group>";
+		};
+		234013A2231D224C00761F8C /* MoviesCell */ = {
+			isa = PBXGroup;
+			children = (
+				234013A4231D228900761F8C /* MoviesTableViewCell.xib */,
+				234013A3231D228900761F8C /* MoviesTableViewCell.swift */,
+			);
+			path = MoviesCell;
 			sourceTree = "<group>";
 		};
 		238B30DC231AE95F0095408A /* DatesList */ = {
@@ -151,6 +164,7 @@
 		23C4B9BA2317144B006B96AB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				234013A2231D224C00761F8C /* MoviesCell */,
 				23C4B9AB23171421006B96AB /* Main.storyboard */,
 				23C4B9B023171422006B96AB /* LaunchScreen.storyboard */,
 			);
@@ -247,6 +261,7 @@
 			files = (
 				23C4B9B223171422006B96AB /* LaunchScreen.storyboard in Resources */,
 				23C4B9AF23171422006B96AB /* Assets.xcassets in Resources */,
+				234013A6231D228900761F8C /* MoviesTableViewCell.xib in Resources */,
 				23C4B9AD23171421006B96AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +327,7 @@
 				23B113292319BF4400A56DEC /* MoviesViewController.swift in Sources */,
 				238B30E3231AFEE30095408A /* MoviesArray.swift in Sources */,
 				238B30E0231AE9BF0095408A /* GetDatesList.swift in Sources */,
+				234013A5231D228900761F8C /* MoviesTableViewCell.swift in Sources */,
 				23083B1823185D040050536C /* allURLs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
