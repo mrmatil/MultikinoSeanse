@@ -30,7 +30,7 @@ class GetMoviesList{
     private func parseJson(json:String){
         guard let dataFromString = json.data(using: .utf8, allowLossyConversion: false) else {return}
         let jsonFromString = try! JSON(data: dataFromString)
-        
+
         let array = jsonFromString["WhatsOnAlphabeticFilms"].array!
         var moviesArray = [MoviesArray]()
         
@@ -76,7 +76,7 @@ class GetMoviesList{
             
             moviesArray.append(MoviesArray(name: movieTitle, time: times, buyTicketWebsite: ticketLinks, version: varsions, rank: rank, poster: poster, trailerUrl: trailerUrl, movieUrl: filmUrl))
         }
-        
+
         completionHandler(moviesArray)
     }
 }

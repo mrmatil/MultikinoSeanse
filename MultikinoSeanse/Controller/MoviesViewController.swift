@@ -11,6 +11,8 @@ import UIKit
 class MoviesViewController: UIViewController {
 
     //variables:
+    var allDataArray:[MoviesArray]?
+    
     var datesArray = [DatesArray]()
     var tempDate:String?
     var currentDate:String?
@@ -47,6 +49,7 @@ class MoviesViewController: UIViewController {
     
     private func getMoviesList(completionHandler:@escaping ()->Void){
         GetMoviesList(date: currentDate!, cinemaId: currentCinemaId!) { (moviesArray) in
+            self.allDataArray=moviesArray
             self.titles = [String]()
             self.rank = [String]()
             self.posterUrl = [String]()
@@ -148,6 +151,9 @@ extension MoviesViewController:UITableViewDelegate,UITableViewDataSource{
             self.moviesTableView.delegate = self
             self.moviesTableView.dataSource = self
             self.moviesTableView.register(UINib(nibName: "MoviesTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomMoviesCell")
+            self.moviesTableView.estimatedRowHeight = 190.0
+            self.moviesTableView.rowHeight = UITableView.automaticDimension
+            self.moviesTableView.separatorStyle = .none
         }
     }
     
@@ -159,6 +165,7 @@ extension MoviesViewController:UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomMoviesCell", for: indexPath) as! MoviesTableViewCell
         cell.title.text = titles[indexPath.row]
         cell.score.text = rank[indexPath.row]
+        cell.url = posterUrl[indexPath.row]
         
         var textk:String = ""
         
@@ -171,5 +178,10 @@ extension MoviesViewController:UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(allDataArray![indexPath.row])
+        moreMoviesInfo.init(moviesArray: allDataArray![indexPath.row], view: self).showAlert()
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
 }
