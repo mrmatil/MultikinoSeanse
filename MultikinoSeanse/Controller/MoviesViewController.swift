@@ -8,17 +8,15 @@
 
 import UIKit
 
-class MoviesViewController: UIViewController {
+class MoviesViewController: UIViewController{
 
     //variables:
+    let ud = UserDefaults()
     var allDataArray:[MoviesArray]?
     
     var datesArray = [DatesArray]()
     var tempDate:String?
     var currentDate:String?
-    
-    var currentCinemaName:String?
-    var currentCinemaId:String?
     
     var titles = [String]()
     var rank = [String]()
@@ -28,14 +26,12 @@ class MoviesViewController: UIViewController {
     //IBOutlets:
     @IBOutlet weak var pickDateTextField: UITextField!
     @IBOutlet weak var moviesTableView: UITableView!
-    
-    @IBAction func KURWA(_ sender: UIButton) {
-        moviesTableView.reloadData()
-    }
+    @IBOutlet weak var cityNameLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        cityNameLabel.text = "Miasto: " + ud.string(forKey: "cinemaName")!
         GetDatesList.init(completionHandler: { (datesArrayTemp) in
             self.datesArray.append(contentsOf: datesArrayTemp)
             self.currentDate = datesArrayTemp[0].date
@@ -48,7 +44,7 @@ class MoviesViewController: UIViewController {
     }
     
     private func getMoviesList(completionHandler:@escaping ()->Void){
-        GetMoviesList(date: currentDate!, cinemaId: currentCinemaId!) { (moviesArray) in
+        GetMoviesList(date: currentDate!, cinemaId: ud.string(forKey: "cinemaID")!) { (moviesArray) in
             self.allDataArray=moviesArray
             self.titles = [String]()
             self.rank = [String]()
@@ -71,6 +67,10 @@ class MoviesViewController: UIViewController {
         }.getList()
     }
     
+    func showDate(){
+        pickDateTextField.text = "\(currentDate!)"
+        pickDateTextField.textAlignment = .center
+    }
     
 }
 
@@ -154,6 +154,7 @@ extension MoviesViewController:UITableViewDelegate,UITableViewDataSource{
             self.moviesTableView.estimatedRowHeight = 190.0
             self.moviesTableView.rowHeight = UITableView.automaticDimension
             self.moviesTableView.separatorStyle = .none
+            self.showDate()
         }
     }
     

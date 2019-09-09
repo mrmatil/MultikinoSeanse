@@ -35,11 +35,9 @@ class CinemaPickViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "InitialSeguey"{
-            let vc = segue.destination as! MoviesViewController
-            vc.currentCinemaName=cinema
-            vc.currentCinemaId=cinemaID
-        }
+        let ud = UserDefaults()
+        ud.set(cinema, forKey: "cinemaName")
+        ud.set(cinemaID, forKey: "cinemaID")
     }
 }
 

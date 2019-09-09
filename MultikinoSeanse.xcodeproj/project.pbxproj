@@ -12,8 +12,14 @@
 		23083B1423184A4B0050536C /* CinemaListArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23083B1323184A4B0050536C /* CinemaListArray.swift */; };
 		23083B1623184AF40050536C /* GetCinemasList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23083B1523184AF40050536C /* GetCinemasList.swift */; };
 		23083B1823185D040050536C /* allURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23083B1723185D040050536C /* allURLs.swift */; };
+		23344380232563450091D0AB /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2334437F232563450091D0AB /* CustomTabBarViewController.swift */; };
+		2334438223256FED0091D0AB /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2334438123256FED0091D0AB /* NewsViewController.swift */; };
+		23344386232574D90091D0AB /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23344384232574D90091D0AB /* NewsTableViewCell.swift */; };
+		23344387232574D90091D0AB /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23344385232574D90091D0AB /* NewsTableViewCell.xib */; };
 		234013A5231D228900761F8C /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234013A3231D228900761F8C /* MoviesTableViewCell.swift */; };
 		234013A6231D228900761F8C /* MoviesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234013A4231D228900761F8C /* MoviesTableViewCell.xib */; };
+		234DEEE9232652F800AAC2F5 /* NewsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234DEEE8232652F800AAC2F5 /* NewsArray.swift */; };
+		234DEEEB2326532F00AAC2F5 /* GetNewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234DEEEA2326532F00AAC2F5 /* GetNewsList.swift */; };
 		238B30DE231AE9740095408A /* DatesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30DD231AE9740095408A /* DatesArray.swift */; };
 		238B30E0231AE9BF0095408A /* GetDatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30DF231AE9BF0095408A /* GetDatesList.swift */; };
 		238B30E3231AFEE30095408A /* MoviesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30E2231AFEE30095408A /* MoviesArray.swift */; };
@@ -21,7 +27,6 @@
 		238B30E7231B16070095408A /* changeDateLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30E6231B16070095408A /* changeDateLayout.swift */; };
 		239EAC6B2323F7FC00BFCA60 /* moreMoviesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239EAC6A2323F7FC00BFCA60 /* moreMoviesInfo.swift */; };
 		23B113292319BF4400A56DEC /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B113282319BF4400A56DEC /* MoviesViewController.swift */; };
-		23B113322319D24100A56DEC /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B113312319D24100A56DEC /* LeftMenuViewController.swift */; };
 		23C4B9A823171421006B96AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4B9A723171421006B96AB /* AppDelegate.swift */; };
 		23C4B9AA23171421006B96AB /* CinemaPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4B9A923171421006B96AB /* CinemaPickViewController.swift */; };
 		23C4B9AD23171421006B96AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C4B9AB23171421006B96AB /* Main.storyboard */; };
@@ -35,8 +40,14 @@
 		23083B1323184A4B0050536C /* CinemaListArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaListArray.swift; sourceTree = "<group>"; };
 		23083B1523184AF40050536C /* GetCinemasList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCinemasList.swift; sourceTree = "<group>"; };
 		23083B1723185D040050536C /* allURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allURLs.swift; sourceTree = "<group>"; };
+		2334437F232563450091D0AB /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
+		2334438123256FED0091D0AB /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		23344384232574D90091D0AB /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		23344385232574D90091D0AB /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		234013A3231D228900761F8C /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
 		234013A4231D228900761F8C /* MoviesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesTableViewCell.xib; sourceTree = "<group>"; };
+		234DEEE8232652F800AAC2F5 /* NewsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArray.swift; sourceTree = "<group>"; };
+		234DEEEA2326532F00AAC2F5 /* GetNewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNewsList.swift; sourceTree = "<group>"; };
 		238B30DD231AE9740095408A /* DatesArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesArray.swift; sourceTree = "<group>"; };
 		238B30DF231AE9BF0095408A /* GetDatesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDatesList.swift; sourceTree = "<group>"; };
 		238B30E2231AFEE30095408A /* MoviesArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesArray.swift; sourceTree = "<group>"; };
@@ -44,7 +55,6 @@
 		238B30E6231B16070095408A /* changeDateLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changeDateLayout.swift; sourceTree = "<group>"; };
 		239EAC6A2323F7FC00BFCA60 /* moreMoviesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreMoviesInfo.swift; sourceTree = "<group>"; };
 		23B113282319BF4400A56DEC /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
-		23B113312319D24100A56DEC /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		23C4B9A423171420006B96AB /* MultikinoSeanse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultikinoSeanse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C4B9A723171421006B96AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23C4B9A923171421006B96AB /* CinemaPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaPickViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +97,15 @@
 			path = CinemasList;
 			sourceTree = "<group>";
 		};
+		23344383232574B00091D0AB /* News Cell */ = {
+			isa = PBXGroup;
+			children = (
+				23344384232574D90091D0AB /* NewsTableViewCell.swift */,
+				23344385232574D90091D0AB /* NewsTableViewCell.xib */,
+			);
+			path = "News Cell";
+			sourceTree = "<group>";
+		};
 		234013A2231D224C00761F8C /* MoviesCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +113,15 @@
 				234013A3231D228900761F8C /* MoviesTableViewCell.swift */,
 			);
 			path = MoviesCell;
+			sourceTree = "<group>";
+		};
+		234DEEE7232652E200AAC2F5 /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				234DEEE8232652F800AAC2F5 /* NewsArray.swift */,
+				234DEEEA2326532F00AAC2F5 /* GetNewsList.swift */,
+			);
+			path = NewsList;
 			sourceTree = "<group>";
 		};
 		238B30DC231AE95F0095408A /* DatesList */ = {
@@ -121,14 +149,6 @@
 				239EAC6A2323F7FC00BFCA60 /* moreMoviesInfo.swift */,
 			);
 			path = MoviesPopUp;
-			sourceTree = "<group>";
-		};
-		23B1132C2319CBE600A56DEC /* SideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				23B113312319D24100A56DEC /* LeftMenuViewController.swift */,
-			);
-			path = SideMenu;
 			sourceTree = "<group>";
 		};
 		23C4B99B23171420006B96AB = {
@@ -164,10 +184,11 @@
 		23C4B9B923171449006B96AB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2334437F232563450091D0AB /* CustomTabBarViewController.swift */,
 				23C4B9A723171421006B96AB /* AppDelegate.swift */,
-				23B1132C2319CBE600A56DEC /* SideMenu */,
 				23C4B9A923171421006B96AB /* CinemaPickViewController.swift */,
 				23B113282319BF4400A56DEC /* MoviesViewController.swift */,
+				2334438123256FED0091D0AB /* NewsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,6 +196,7 @@
 		23C4B9BA2317144B006B96AB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				23344383232574B00091D0AB /* News Cell */,
 				234013A2231D224C00761F8C /* MoviesCell */,
 				23C4B9AB23171421006B96AB /* Main.storyboard */,
 				23C4B9B023171422006B96AB /* LaunchScreen.storyboard */,
@@ -185,6 +207,7 @@
 		23C4B9BB2317144C006B96AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				234DEEE7232652E200AAC2F5 /* NewsList */,
 				238B30E1231AFECF0095408A /* MoviesList */,
 				238B30DC231AE95F0095408A /* DatesList */,
 				23083B1223184A280050536C /* CinemasList */,
@@ -274,6 +297,7 @@
 				23C4B9AF23171422006B96AB /* Assets.xcassets in Resources */,
 				234013A6231D228900761F8C /* MoviesTableViewCell.xib in Resources */,
 				23C4B9AD23171421006B96AB /* Main.storyboard in Resources */,
+				23344387232574D90091D0AB /* NewsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,18 +351,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				23083B1623184AF40050536C /* GetCinemasList.swift in Sources */,
+				23344380232563450091D0AB /* CustomTabBarViewController.swift in Sources */,
 				238B30E5231B11DF0095408A /* GetMoviesList.swift in Sources */,
-				23B113322319D24100A56DEC /* LeftMenuViewController.swift in Sources */,
 				238B30DE231AE9740095408A /* DatesArray.swift in Sources */,
 				23083B1423184A4B0050536C /* CinemaListArray.swift in Sources */,
 				23C4B9AA23171421006B96AB /* CinemaPickViewController.swift in Sources */,
 				239EAC6B2323F7FC00BFCA60 /* moreMoviesInfo.swift in Sources */,
+				23344386232574D90091D0AB /* NewsTableViewCell.swift in Sources */,
 				23083B11231831AC0050536C /* getJsonFromURL.swift in Sources */,
 				23C4B9A823171421006B96AB /* AppDelegate.swift in Sources */,
 				238B30E7231B16070095408A /* changeDateLayout.swift in Sources */,
 				23B113292319BF4400A56DEC /* MoviesViewController.swift in Sources */,
+				2334438223256FED0091D0AB /* NewsViewController.swift in Sources */,
+				234DEEE9232652F800AAC2F5 /* NewsArray.swift in Sources */,
 				238B30E3231AFEE30095408A /* MoviesArray.swift in Sources */,
 				238B30E0231AE9BF0095408A /* GetDatesList.swift in Sources */,
+				234DEEEB2326532F00AAC2F5 /* GetNewsList.swift in Sources */,
 				234013A5231D228900761F8C /* MoviesTableViewCell.swift in Sources */,
 				23083B1823185D040050536C /* allURLs.swift in Sources */,
 			);

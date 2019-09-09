@@ -20,4 +20,7 @@ class AllUrls{
     static let moviesList1:String = "https://multikino.pl/api/sitecore/WhatsOn/WhatsOnV2Alphabetic?cinemaId="
     static let moviesList2:String = "&data="
     static let moviesList3:String = "&type=teraz-gramy"
+    
+    //News List
+    static let newsList:String = "https://multikino.pl/api/sitecore/WhatsOn/NewsInCinema?cinemaId="
 }

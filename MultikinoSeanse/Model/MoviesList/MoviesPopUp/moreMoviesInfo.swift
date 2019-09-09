@@ -13,7 +13,7 @@ class moreMoviesInfo{
     
     let moviesArray:MoviesArray?
     let view:UIViewController
-    let multikinoBaseUrl = "https://multikino.pl/"
+    let multikinoBaseUrl = "https://multikino.pl"
     
     init(moviesArray:MoviesArray, view:UIViewController) {
         self.moviesArray=moviesArray
@@ -22,7 +22,7 @@ class moreMoviesInfo{
     
     func showAlert(){
         let alert = UIAlertController(title: "Wybierz akcje:",
-                                      message: "Dupa",
+                                      message: "",
                                       preferredStyle: .actionSheet)
         
         //cancel button
@@ -30,7 +30,7 @@ class moreMoviesInfo{
         alert.addAction(cancelButton)
         
         //movies trailer button
-        if moviesArray?.trailerUrl != nil{
+        if moviesArray?.trailerUrl != ""{
             let movieTrailerButton = UIAlertAction(title: "Zobacz Trailer", style: .default) { (UIAlertAction) in
                 self.showWebsite(url: self.moviesArray!.trailerUrl)
             }
@@ -38,7 +38,7 @@ class moreMoviesInfo{
         }
         
         //movie url button
-        if moviesArray?.movieUrl != nil{
+        if moviesArray?.movieUrl != ""{
             let movieUrlButton = UIAlertAction(title: "Zobacz stronę filmu", style: .default) { (UIAlertAction) in
                 self.showWebsite(url: self.multikinoBaseUrl + self.moviesArray!.movieUrl)
             }
@@ -59,7 +59,7 @@ class moreMoviesInfo{
     }
     
     private func showWebsite(url:String){
-        let svc = SFSafariViewController(url: URL(string: url) ?? URL(string: "")!)
+        let svc = SFSafariViewController(url: URL(string: url) ?? URL(string: multikinoBaseUrl)!)
         view.present(svc, animated: true, completion: nil)
     }
 }
