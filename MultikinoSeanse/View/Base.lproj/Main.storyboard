@@ -73,7 +73,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gc5-1b-1de">
-                                <rect key="frame" x="5" y="93" width="404" height="59"/>
+                                <rect key="frame" x="5" y="49" width="404" height="59"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIASTO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTg-Wn-od3">
                                         <rect key="frame" x="0.0" y="0.0" width="404" height="24"/>
@@ -90,7 +90,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VHo-ma-r9A">
-                                <rect key="frame" x="5" y="157" width="404" height="651"/>
+                                <rect key="frame" x="5" y="113" width="404" height="695"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -106,6 +106,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="64m-VY-h9r"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Seanse" image="cinema" id="Xhb-mj-rnb"/>
                     <navigationItem key="navigationItem" title="Multikino Seanse" id="gZy-64-2EJ"/>
                     <connections>
                         <outlet property="cityNameLabel" destination="PTg-Wn-od3" id="5hE-qC-y2N"/>
@@ -117,33 +118,6 @@
             </objects>
             <point key="canvasLocation" x="605.79710144927537" y="-1154.4642857142856"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="hXf-ud-WpM">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r82-aM-HIH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="VWZ-e7-xQZ"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tkd-y1-MlU">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FzO-pD-U1G">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="DLz-D7-Uic" kind="relationship" relationship="rootViewController" id="mjn-OV-M9M"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5e0-mb-dCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-112" y="-1154"/>
-        </scene>
         <!--Multikino Informacje-->
         <scene sceneID="tMn-Cd-Qpp">
             <objects>
@@ -153,12 +127,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mUA-Xj-7Uv">
-                                <rect key="frame" x="5" y="122" width="404" height="686"/>
+                                <rect key="frame" x="5" y="78" width="404" height="730"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <sections/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIASTO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPa-hm-YSU">
-                                <rect key="frame" x="5" y="93" width="404" height="24"/>
+                                <rect key="frame" x="5" y="49" width="404" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -176,6 +150,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y6V-iS-e2J"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Aktualności" image="news" id="kdq-Oz-tGt"/>
                     <navigationItem key="navigationItem" title="Multikino Informacje" id="1xK-hy-EqT"/>
                     <connections>
                         <outlet property="cityLabel" destination="zPa-hm-YSU" id="xE9-Ch-aBa"/>
@@ -195,37 +170,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="83"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="r82-aM-HIH" kind="relationship" relationship="viewControllers" id="5iq-0F-vtG"/>
-                        <segue destination="xY5-hh-Lyy" kind="relationship" relationship="viewControllers" id="ZhD-Hi-E0X"/>
+                        <segue destination="DLz-D7-Uic" kind="relationship" relationship="viewControllers" id="siu-HG-PVK"/>
+                        <segue destination="L6Y-a3-2T7" kind="relationship" relationship="viewControllers" id="Czc-Yq-R7z"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcM-vZ-Npj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1136" y="-443"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="grL-ao-Qnd">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xY5-hh-Lyy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="a4y-42-hQq"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qAf-Td-8b4">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="L6Y-a3-2T7" kind="relationship" relationship="rootViewController" id="rl7-Ih-a9q"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ESH-XQ-TZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-113" y="-310"/>
-        </scene>
     </scenes>
+    <resources>
+        <image name="cinema" width="25" height="25"/>
+        <image name="news" width="25" height="25"/>
+    </resources>
 </document>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class NewsViewController: UIViewController {
 
@@ -29,6 +30,8 @@ class NewsViewController: UIViewController {
     
     func getNews(){
         let ud = UserDefaults()
+        cityLabel.text = "Miasto: " + ud.string(forKey: "cinemaName")!
+
         GetNewsList(cinemaId: ud.string(forKey: "cinemaID")!) { (newsArray) in
             self.newsArray=newsArray
             self.enableTableView()
@@ -66,5 +69,10 @@ extension NewsViewController:UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let svc = SFSafariViewController(url: URL.init(string: multikinoBaseUrl + newsArray[indexPath.row].linkUrl)!)
+        self.present(svc, animated: true, completion: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
 }
