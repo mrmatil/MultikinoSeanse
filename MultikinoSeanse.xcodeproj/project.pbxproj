@@ -19,6 +19,7 @@
 		234013A6231D228900761F8C /* MoviesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234013A4231D228900761F8C /* MoviesTableViewCell.xib */; };
 		234DEEE9232652F800AAC2F5 /* NewsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234DEEE8232652F800AAC2F5 /* NewsArray.swift */; };
 		234DEEEB2326532F00AAC2F5 /* GetNewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234DEEEA2326532F00AAC2F5 /* GetNewsList.swift */; };
+		236D80B52329676300160EF5 /* SwipeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236D80B42329676300160EF5 /* SwipeTabBarController.swift */; };
 		238B30DE231AE9740095408A /* DatesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30DD231AE9740095408A /* DatesArray.swift */; };
 		238B30E0231AE9BF0095408A /* GetDatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30DF231AE9BF0095408A /* GetDatesList.swift */; };
 		238B30E3231AFEE30095408A /* MoviesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30E2231AFEE30095408A /* MoviesArray.swift */; };
@@ -48,6 +49,7 @@
 		234013A4231D228900761F8C /* MoviesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesTableViewCell.xib; sourceTree = "<group>"; };
 		234DEEE8232652F800AAC2F5 /* NewsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArray.swift; sourceTree = "<group>"; };
 		234DEEEA2326532F00AAC2F5 /* GetNewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNewsList.swift; sourceTree = "<group>"; };
+		236D80B42329676300160EF5 /* SwipeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabBarController.swift; sourceTree = "<group>"; };
 		238B30DD231AE9740095408A /* DatesArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesArray.swift; sourceTree = "<group>"; };
 		238B30DF231AE9BF0095408A /* GetDatesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDatesList.swift; sourceTree = "<group>"; };
 		238B30E2231AFEE30095408A /* MoviesArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesArray.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				23C4B9A723171421006B96AB /* AppDelegate.swift */,
+				236D80B42329676300160EF5 /* SwipeTabBarController.swift */,
 				23C4B9A923171421006B96AB /* CinemaPickViewController.swift */,
 				23B113282319BF4400A56DEC /* MoviesViewController.swift */,
 				2334438123256FED0091D0AB /* NewsViewController.swift */,
@@ -366,6 +369,7 @@
 				238B30DE231AE9740095408A /* DatesArray.swift in Sources */,
 				23083B1423184A4B0050536C /* CinemaListArray.swift in Sources */,
 				23C4B9AA23171421006B96AB /* CinemaPickViewController.swift in Sources */,
+				236D80B52329676300160EF5 /* SwipeTabBarController.swift in Sources */,
 				239EAC6B2323F7FC00BFCA60 /* moreMoviesInfo.swift in Sources */,
 				23344386232574D90091D0AB /* NewsTableViewCell.swift in Sources */,
 				23083B11231831AC0050536C /* getJsonFromURL.swift in Sources */,

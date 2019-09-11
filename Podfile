@@ -7,6 +7,5 @@ target 'MultikinoSeanse' do
 
   # Pods for MultikinoSeanse
   pod 'SwiftyJSON', '~> 5.0'
-  pod 'SideMenu', '~> 6.0'
-  pod 'ESTabBarController-swift'
+  pod 'SwipeableTabBarController'
 end

@@ -161,10 +161,10 @@
             </objects>
             <point key="canvasLocation" x="606" y="-310"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Swipe Tab Bar Controller-->
         <scene sceneID="td7-mN-w0n">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="E8H-jk-hIk" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="E8H-jk-hIk" customClass="SwipeTabBarController" customModule="MultikinoSeanse" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Iz-u2-w4R">
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="83"/>

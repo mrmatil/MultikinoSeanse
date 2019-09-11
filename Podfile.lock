@@ -1,24 +1,20 @@
 PODS:
-  - ESTabBarController-swift (2.7)
-  - SideMenu (6.2.4)
   - SwiftyJSON (5.0.0)
+  - SwipeableTabBarController (2.1.1)
 
 DEPENDENCIES:
-  - ESTabBarController-swift
-  - SideMenu (~> 6.0)
   - SwiftyJSON (~> 5.0)
+  - SwipeableTabBarController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - ESTabBarController-swift
-    - SideMenu
     - SwiftyJSON
+    - SwipeableTabBarController
 
 SPEC CHECKSUMS:
-  ESTabBarController-swift: 4fb52ad03d94d0717ef97bc9eb09a5abfdded0a2
-  SideMenu: 60c9be9452d0756c3e723f9e508abb028e138361
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  SwipeableTabBarController: 8f7f04275f510c5babb630f7be1161b5f28567e0
 
-PODFILE CHECKSUM: 48bdc28e82bd5e61a60c0d9fac97df323c5fecee
+PODFILE CHECKSUM: 56656200c484846a506cf9ef525d982c43a86b81
 
 COCOAPODS: 1.7.5
